@@ -1,139 +1,134 @@
+/* =======================
+   RETRO PIXEL UI THEME
+======================= */
+
+/* Import pixel font */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: #f0f0f5;
+    font-family: 'Press Start 2P', monospace;
+    background: #0f172a; /* 60% */
+    color: #e2e8f0;
     margin: 0;
     padding: 15px;
 }
 
+/* =======================
+   TITLE
+======================= */
 h1 {
     text-align: center;
-    margin-bottom: 15px;
-    color: #007AFF;
+    color: #22c55e; /* accent */
+    font-size: 16px;
+    margin-bottom: 20px;
 }
 
+/* =======================
+   DASHBOARD BUTTONS
+======================= */
 .dashboard {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     gap: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .card-button {
-    background: white;
-    padding: 16px;
-    border-radius: 12px;
+    background: #1e293b; /* 30% */
+    border: 3px solid #22c55e;
+    padding: 10px;
     text-align: center;
     cursor: pointer;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-    transition: transform 0.15s, box-shadow 0.15s;
+
+    /* pixel shadow */
+    box-shadow: 4px 4px 0 #020617;
+
+    transition: transform 0.1s;
 }
 
 .card-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 #020617;
 }
 
 .card-button.active {
-    border: 2px solid #007AFF;
+    background: #22c55e;
+    color: #020617;
 }
 
-input[type=text] {
-    width: 95%;
-    max-width: 400px;
-    margin: 0 auto 15px auto;
-    display: block;
-    padding: 12px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-}
-
-.result-card {
-    background: white;
-    padding: 12px;
-    border-radius: 12px;
-    margin: 10px 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.result-card h3 { 
-    margin:0 0 5px 0; 
-    font-size:18px; 
-    color:#007AFF; 
-}
-
-.field { margin:4px 0; }
-.label { font-weight:bold; }
-
-/* TABLE */
-table {
+/* =======================
+   SEARCH BAR
+======================= */
+input[type="text"] {
     width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    margin-top: 10px;
+    max-width: 400px;
+    margin: 0 auto 20px auto;
+    display: block;
+
+    padding: 10px;
+    border: 3px solid #22c55e;
+    background: #020617;
+    color: #22c55e;
+
+    font-family: 'Press Start 2P', monospace;
+    font-size: 10px;
+
+    box-shadow: 4px 4px 0 #020617;
 }
 
-thead { 
-    background-color: #007AFF; 
-    color: white; 
+input::placeholder {
+    color: #64748b;
 }
 
-th, td { 
-    padding: 10px 12px; 
-    text-align:left; 
+/* =======================
+   RESULT CARDS
+======================= */
+.result-card {
+    background: #1e293b;
+    border: 3px solid #22c55e;
+    padding: 12px;
+    margin: 12px 0;
+
+    box-shadow: 4px 4px 0 #020617;
 }
 
-tbody tr:nth-child(even) { 
-    background-color: #f7f9fc; 
+.result-card h3 {
+    font-size: 12px;
+    color: #22c55e;
+    margin-bottom: 10px;
 }
 
-tbody tr:hover { 
-    background-color: #e6f0ff; 
+/* =======================
+   TEXT FIELDS
+======================= */
+.field {
+    margin: 6px 0;
+    font-size: 10px;
 }
 
-p.reward { 
-    font-weight:bold; 
-    margin-top:8px; 
-    color:#007AFF; 
+.label {
+    color: #38bdf8;
 }
 
-/* BACK BUTTON */
-.back-button {
-    display:inline-block;
-    margin-bottom:10px;
-    cursor:pointer;
-    color:#007AFF;
-    font-weight:bold;
-}
-
-.back-button:hover { 
-    text-decoration:underline; 
-}
-
-/* CLICKABLE ITEMS */
-.clickable-item {
-    cursor: pointer;
-}
-
-/* CHIP STYLE (BONUS UI) */
+/* =======================
+   CLICKABLE ITEMS (CHIPS)
+======================= */
 .chip {
-    background: #e6f0ff;
-    padding: 4px 8px;
-    border-radius: 8px;
-    margin: 2px 4px 2px 0;
     display: inline-block;
-    font-size: 13px;
-    transition: background 0.15s;
+    margin: 3px;
+    padding: 4px 6px;
+
+    border: 2px solid #22c55e;
+    background: #020617;
+    color: #22c55e;
+
+    cursor: pointer;
+    font-size: 9px;
+
+    box-shadow: 2px 2px 0 #020617;
 }
 
 .chip:hover {
-    background: #cce0ff;
-    text-decoration: underline;
-}
-
-@media(max-width:600px){
-    table, th, td { font-size:12px; }
+    background: #22c55e;
+    color: #020617;
 }
