@@ -2,15 +2,15 @@
 // CATEGORY META
 // =======================
 const categoryMeta = {
-  "fish": { label: "Fish", color: "#1E90FF" },
-  "crops": { label: "Crops", color: "#32CD32" },
-  "foraging": { label: "Foraging", color: "#FFA500" },
-  "animals": { label: "Animals", color: "#8B4513" },
-  "villagers": { label: "Villagers", color: "#FF69B4" },
-  "bundles": { label: "Bundles", color: "#FFD700" },
-  "minerals": { label: "Minerals", color: "#FFD700" },
-  "artisangoods": { label: "Artisan", color: "#FFD700" },
-  "cookbook": { label: "Cookbook", color: "#FFD700" }
+  "fish": { label: "Fish"},
+  "crops": { label: "Crops"},
+  "foraging": { label: "Foraging"},
+  "animals": { label: "Animals"},
+  "villagers": { label: "Villagers"},
+  "bundles": { label: "Bundles"},
+  "minerals": { label: "Minerals"},
+  "artisangoods": { label: "Artisan"},
+  "cookbook": { label: "Cookbook"}
 };
 
 let activeCategory = "";
