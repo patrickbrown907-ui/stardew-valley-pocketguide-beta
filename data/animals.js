@@ -56,7 +56,7 @@ allData.animals = {
         building: "Deluxe Coop",
         cost: "8000g",
         product: ["Wool"],
-        secondaryProduct: ["Rabbit's Foot"],
+        secondaryProduct: ["Rabbits Foot"],
         notes: "Produces wool; rare chance for Rabbit's Foot"
     },
 
@@ -75,5 +75,112 @@ allData.animals = {
         cost: "N/A (incubated egg)",
         product: ["Ostrich Egg"],
         notes: "Produces large eggs used in special processing"
+    },
+
+    // =====================
+    // PRODUCTS
+    // =====================
+ 
+   "Egg": {
+        animal: ["Chicken"],
+        sellFor: "50g"
+
+    },
+
+   "Large Egg": {
+        animal: ["Chicken"],
+        sellFor: "95g"
+
+    },
+
+   "Brown Egg": {
+        animal: ["Chicken"],
+        sellFor: "50g"
+
+    },
+
+   "Large Brown Egg": {
+        animal: ["Chicken"],
+        sellFor: "95g"
+
+    },
+
+   "Void Egg": {
+        animal: ["Void Chicken"],
+        sellFor: "65g"
+
+    },
+
+   "Golden Egg": {
+        animal: ["Golden Chicken"],
+        sellFor: "500g"
+
+    },
+
+   "Duck Egg": {
+        animal: ["Duck"],
+        sellFor: "95g"
+
+    },
+
+   "Duck Feather": {
+        animal: ["Duck"],
+        sellFor: "250g"
+
+    },
+
+   "Wool": {
+        animal: ["Rabbit", "Sheep"],
+        sellFor: "340g"
+
+    },
+
+   "Rabbits Foot": {
+        animal: ["Rabbit"],
+        sellFor: "565g"
+
+    },
+
+   "Dinosaur Egg": {
+        animal: ["Dinosaur"],
+        sellFor: "350g"
+
+    },
+
+   "Milk": {
+        animal: ["Cow"],
+        sellFor: "125g"
+
+    },
+
+   "Large Milk": {
+        animal: ["Cow"],
+        sellFor: "190g"
+
+    },
+
+   "Goat Milk": {
+        animal: ["Goat"],
+        sellFor: "225g"
+
+    },
+
+   "Large Goat Milk": {
+        animal: ["Goat"],
+        sellFor: "345g"
+
+    },
+
+   "Truffle": {
+        animal: ["Pig"],
+        sellFor: "625g"
+
+    },
+
+   "Ostrich Egg": {
+        animal: ["Ostrich"],
+        sellFor: "600g"
+
     }
+
 };
